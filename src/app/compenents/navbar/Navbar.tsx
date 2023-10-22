@@ -11,7 +11,8 @@ function Navbar() {
     menuRef,
     menuItemsRef,
     handleMenuClick,
-    handleCloseClick
+    handleCloseClick,
+    onAnchorClick
   } = useNavbarHook();
 
 
@@ -23,7 +24,7 @@ function Navbar() {
       <img src={menuIcon} alt="Menu" ref={menuRef} id={NavbarStyles['menu']} onClick={handleMenuClick}/>
       <img src={closeIcon} alt="close" ref={closeRef} id={NavbarStyles['close']} onClick={handleCloseClick}/>
       <div className={NavbarStyles["routes"]} ref={menuItemsRef}>
-        <a href="">Team</a>
+        <a href="" onClick={onAnchorClick}>Team</a>
         <a href="">Studio</a>
         <a href="">Resources</a>
       </div>

@@ -1,10 +1,12 @@
 import { useRef } from "react"
+import { useNavigate } from "react-router-dom";
 
 export const useNavbarHook = () => {
 
     const menuRef = useRef<HTMLImageElement>(null);
     const closeRef = useRef<HTMLImageElement>(null);
     const menuItemsRef = useRef<HTMLDivElement>(null);
+    const navigate = useNavigate();
 
     function handleMenuClick() {
         if (menuRef.current && closeRef.current && menuItemsRef.current) {
@@ -23,11 +25,17 @@ export const useNavbarHook = () => {
 
     }
 
+    function onAnchorClick(event: any){
+        event.preventDefault();
+        navigate('/eissa')
+    }
+
     return {
         menuRef,
         closeRef,
         menuItemsRef,
         handleMenuClick,
-        handleCloseClick
+        handleCloseClick,
+        onAnchorClick
     }
 }
