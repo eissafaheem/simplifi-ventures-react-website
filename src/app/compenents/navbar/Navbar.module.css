@@ -1,27 +1,66 @@
-.navbar-container{
+.navbar-container {
     box-sizing: border-box;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.476);
+    background-color: var(--brand_color_opacity);
     display: flex;
     justify-content: space-between;
     padding: 2rem 7rem;
     color: var(--font_color_1);
 }
 
-.navbar-container .brand-name{
+.navbar-container .brand-name {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.navbar-container .routes{
+.navbar-container .routes {
     display: flex;
     gap: 3rem;
 }
 
-.navbar-container .routes a{
+.navbar-container .routes a {
     text-decoration: none;
     color: black;
+}
+
+#menu, 
+#close{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-container {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-container .brand-name{
+        font-size: 1rem;
+    }
+
+    .navbar-container .routes{
+        display: none;
+        background-color: var(--brand_color_opacity);
+        position: absolute;
+        top: 3.145rem;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .navbar-container .routes a{
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu{
+        display: block;
+    }
 }

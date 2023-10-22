@@ -9,4 +9,6 @@ body {
 :root{
   --font_color_1: #333333;
   --font_color_2: #4F4F4F;
+  --brand_color: #FFFFFF;
+  --brand_color_opacity: rgba(255, 255, 255, 0.963);
 }
