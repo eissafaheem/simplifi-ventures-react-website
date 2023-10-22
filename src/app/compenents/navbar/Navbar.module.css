@@ -1,8 +1,14 @@
 .navbar-container{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
     background-color: rgba(255, 255, 255, 0.476);
     display: flex;
     justify-content: space-between;
     padding: 2rem 7rem;
+    color: var(--font_color_1);
 }
 
 .navbar-container .brand-name{
@@ -12,7 +18,7 @@
 
 .navbar-container .routes{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .navbar-container .routes a{
