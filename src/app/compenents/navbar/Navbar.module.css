@@ -1,0 +1,21 @@
+.navbar-container{
+    background-color: rgba(255, 255, 255, 0.476);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+}
+
+.navbar-container .brand-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-container .routes{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-container .routes a{
+    text-decoration: none;
+    color: black;
+}
