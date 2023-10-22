@@ -25,9 +25,9 @@ export const useNavbarHook = () => {
 
     }
 
-    function onAnchorClick(event: any){
+    function onAnchorClick(event: any, route: string){
         event.preventDefault();
-        navigate('/eissa')
+        navigate(route);
     }
 
     return {

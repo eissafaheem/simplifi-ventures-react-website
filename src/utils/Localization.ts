@@ -4,6 +4,7 @@ import homeImage3 from './../assets/home-img3.png'
 import homeImage4 from './../assets/home-img4.svg'
 import homeImage5 from './../assets/home-img5.svg'
 import homeImage6 from './../assets/home-img6.svg'
+import teamImage1 from './../assets/team-img1.svg'
 
 
 export const UI_CONSTANTS = {
@@ -41,6 +42,15 @@ export const UI_CONSTANTS = {
                 Please drop us an email at: learnmore@simplifiventures.com`,
                 image: homeImage6
             },
-        ]
+        ],
+        team:[
+            
+            {
+                heading: 'We build meaningful companies',
+                content: `Meet the Simplifi team. 
+                We are operators, engineers, product managers and researchers`,
+                image: teamImage1
+            },
+    ]
 
 }
