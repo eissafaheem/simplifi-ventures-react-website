@@ -6,6 +6,7 @@ import homeImage5 from './../assets/home-img5.svg'
 import homeImage6 from './../assets/home-img6.svg'
 import teamImage1 from './../assets/team-img1.svg'
 import resourceImage1 from './../assets/resources-img1.svg'
+import studioImage1 from './../assets/studio-img1.svg'
 import studioImage3 from './../assets/studio-img3.svg'
 import studioImage4 from './../assets/studio-img4.svg'
 
@@ -72,7 +73,7 @@ export const UI_CONSTANTS = {
         {
             heading: 'At Simplifi Ventures we believe in delivering value for our entrepreneurs and financial partners',
             content: ``,
-            image: resourceImage1
+            image: studioImage1
         },
         {
             heading: 'Grounded Innovations',
